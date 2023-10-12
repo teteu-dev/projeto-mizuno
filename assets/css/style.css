@@ -1,0 +1,465 @@
+/* FONTE IMPORTADA */
+@import url('https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap');
+/* RESET PAGE */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Racing Sans One', cursive;
+    color: #000;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+/* BODY */
+body {
+    background-color: #f4f4f4;
+}
+/* MENU */
+header {
+   height: 100px;
+   width: 100%;
+   /* DISPLAY FLEX */
+   display: flex;
+   /* ALINHAMENTO VERTICAL */
+   align-items: center;
+   /* ALINHAMENTO HORIZONTAL */
+   justify-content: space-between;
+}
+
+.logo {
+   display: flex;
+   align-items: center;
+   margin-left: 100px;
+}
+
+.logo img {
+    width: 70px;
+    height: 30px;
+}
+
+.logo h1 {
+    font-size: 40px;
+    margin-left: 9px;
+}
+
+/* LINKS DO MENU */
+header ul {
+    display: flex;
+    margin-right: 100px;
+    gap: 30px;
+    align-items: center;
+}
+
+header ul li a {
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+header ul li a:hover {
+    color: #000dff;
+}
+
+/* BANNER INITIAL */
+.banner-initial {
+    width: 100%;
+    height: calc(100vh - 100px);
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    position: relative;
+}
+
+.banner-initial h1 {
+    font-size: 300px;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 10px;
+}
+
+.banner-initial img {
+    width: 42%;
+    z-index: 2;
+    position: absolute;
+    top: -130px;
+    transform: rotate(15deg);
+}
+/* LOJA */
+.loja {
+    width: 76%;
+    height: 150px;
+    margin-inline: auto;
+    /* PROPRIEDADE PARA FLEXIONAR */
+    display: flex;
+    /* PROPRIEDADE PARA ALINHAR AO CENTRO */
+    align-items: center;
+    /* PROPRIEDADE ALINHAMENTO HORIZONTAL */
+    justify-content: space-between;
+    margin-top: 136px;
+}
+
+.loja h2 {
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+.loja p {
+    font-size: 30px;
+    color: #000dff;
+}
+/* BOX STORE */
+.box-store {
+    width: 76%;
+    margin-inline: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    flex-wrap: wrap;
+    gap: 60px;
+    margin-bottom: 100px;
+}
+
+.box-store li {
+    height: 402;
+}
+
+.box-store li figure {
+    background-color: #f0f1f3;
+    height: 325px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 10px 10px 10px 0px #00000019;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.box-store li figure:hover {
+    background-color: #000dff;
+    box-shadow: 10px 10px 10px 0px #000dff4f;
+}
+
+.box-store li figure img {
+    width: 80%;
+}
+
+.box-store li figcaption {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.box-store li figcaption h3 {
+    font-size: 23px;
+}
+
+.box-store li figcaption h6 {
+    font-size: 20px;
+    color: #000dff;
+}
+
+/* FOOTER */
+footer {
+    height: 200px;
+    width: 100%;
+    background-color: #f0f1f3;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer ul {
+    display: flex;
+    align-items: center;
+    margin-right: 100px;
+    gap: 10px;
+}
+
+footer ul li {
+    width: 80px;
+    height: 80px;
+    border-radius: 8px;
+    background-color: #f0f1f3;
+    box-shadow: 10px 10px 10px 0px #00000019;
+    transition: 0.2s;
+}
+
+footer ul li:hover {
+    background-color: #000dff;
+    box-shadow: 10px 10px 10px 0px #000dff4f;
+}
+
+footer ul li a {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer ul li a img {
+    width: 65px;
+    height: 65px;
+}
+
+/* RESPONSIVO */
+@media all and (max-width: 1024px) {
+    .banner-initial {
+      margin-left: 140px;
+      margin-top: 200px;
+    }
+  
+    .banner-initial h1 {
+      font-size: 280px;
+    }
+  
+    .banner-initial img {
+      top: -235px;
+      width: 600px;
+    }
+  
+    header ul li a {
+      font-size: 40px;
+    }
+  
+    header {
+      width: 130%;
+    }
+  
+    .loja {
+      width: 125%;
+      height: 150px;
+    }
+  
+    .loja h2 {
+      font-size: 40px;
+      margin-left: 4%;
+    }
+  
+    .box-store {
+      gap: 20px;
+    }
+  
+    .box-store li {
+      width: 300px;
+      margin-left: 33px;
+    }
+  
+    .box-store li figcaption h3 {
+      font-size: 25px;
+    }
+  
+    .box-store li figcaption h6 {
+      font-size: 20px;
+    }
+  
+    .box-store li figure img {
+      width: 80%;
+    }
+  
+    footer {
+      width: 128%;
+    }
+  }
+  
+  @media all and (max-width: 768px) {
+    .banner-initial {
+      margin-left: 27%;
+      margin-top: 270px;
+    }
+  
+    header {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 30px;
+      height: 150px;
+    }
+  
+    header ul {
+      margin-left: 280px;
+    }
+  
+    header ul li a {
+      font-size: 50px;
+    }
+  
+    .logo {
+      margin-top: 60px;
+      margin-left: 200px;
+    }
+  
+    .logo img {
+      width: 100px;
+      height: 60px;
+    }
+  
+    .logo h1{
+      display: none;
+    }
+  
+    .loja {
+      width: 152%;
+      flex-direction: column;
+      justify-content: center;
+    }
+  
+    .loja h2 {
+      margin-right: 70px;
+      font-size: 60px;
+    }
+  
+    .loja p {
+      font-size: 40px;
+    }
+  
+    .box-store {
+      grid-template-columns: 1fr 1fr;
+      width: 300px;
+      margin-left: 35px;
+    }
+  
+    .box-store li {
+      width: 500px;
+    }
+  
+    .box-store li figure {
+      height: 600px;
+    }
+    
+    .box-store li figcaption h3 {
+      font-size: 40px;
+    }
+  
+    .box-store li figcaption h6 {
+      font-size: 30px;
+    }
+  
+    footer {
+      width: 155%;
+      height: 300px;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 50px;
+      margin-bottom: 100px;
+    }
+  
+    footer .logo {
+      margin-right: 210px;
+    }
+    
+    footer ul {
+      margin-left: 90px;
+      gap: 20px;
+    }
+  
+    footer ul li{
+      width: 100px;
+      height: 100px;
+    }
+  
+    footer ul li a img {
+      width: 80px;
+      height: 80px;
+    }
+  }
+  
+  @media all and (max-width: 425px) {
+    .logo {
+      margin-top: 150px;
+      margin-left: 590px;
+    }
+  
+    .logo img{
+      width: 190px;
+      height: 120px;
+    }
+  
+    header ul {
+      margin-left: 550px;
+    }
+  
+    header ul li {
+      margin-left: 100px;
+    }
+  
+    header ul li a {
+      font-size: 80px;
+    }
+  
+    .banner-initial {
+      margin-left: 330px;
+      margin-bottom: 300px;
+      margin-top: 420px;
+    }
+  
+    .loja {
+      width: 263%;
+      margin-bottom: 100px;
+    }
+  
+    .loja h2 {
+      font-size: 90px;
+    }
+  
+    .loja p {
+      font-size: 55px;
+    }
+  
+    .box-store {
+      grid-template-columns: 1fr;
+      width: 600px;
+      margin-left: 90px;
+      gap: 130px;
+    }
+  
+    .box-store li {
+      width: 850px;
+  
+    }
+  
+    .box-store li figure {
+      height: 900px;
+      margin-bottom: 10px;
+    }
+  
+    .box-store li figcaption h3 {
+      font-size: 70px;
+    }
+  
+    .box-store li figcaption h6 {
+      font-size: 50px;
+    }
+  
+    footer {
+      width: 263%;
+      height: 600px;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 50px;
+      margin-bottom: 100px;
+    }
+  
+    footer .logo {
+      margin-right: 550px;
+      margin-bottom: 50px;
+    }
+    
+    footer ul {
+      margin-left: 90px;
+      gap: 30px;
+    }
+  
+    footer ul li{
+      width: 150px;
+      height: 150px;
+    }
+  
+    footer ul li a img {
+      width: 120px;
+      height: 120px;
+    }
+  }
